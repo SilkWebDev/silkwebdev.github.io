@@ -315,7 +315,7 @@ const testimonials = [
       'We engaged J. S. Kerr Building Limited on a recommendation from a friend (we viewed his previous barn conversions carried out for our friend). We had no building experience, and embarked on converting an old barn into our new home (see photo gallery)./x' +
       'Jim explained every stage from start to finish, making the process appear easy. His skilled team are respectful and helpful, all working to a high standard, leaving the site tidy. This was not a project for the faint-hearted, but the results are outstanding. The oak beams created by Shane are so impressive, resulting in an overall luxurious finish./x' +
       'Thank you Team!',
-    imageURL: './images/site-logo.png',
+    imageURL: '',
   },
   {
     title: 'Ron & Alison',
@@ -374,7 +374,7 @@ const testimonials = [
       'Jim Kerr and his team provide a totally professional and experienced building service./x' +
       'Jim has undertaken several projects for us from Barn Conversions to Patio Constructions over the years and is always attentive and thoughtful in discussing your requirements. He has great knowledge and skill, and provides that extra care which produces excellent workmanship./x' +
       'He manages the whole process from inception to completion, dealing with all aspects of the project. We would strongly recommend his company.',
-    imageURL: '',
+    imageURL: '.images/project-images/upton-barnconversion-4-original.jpg',
   },
   {
     title: 'Viv',
@@ -387,6 +387,6 @@ const testimonials = [
       'He is reliable, hard working, kind and caring and will do everything in his power to get a build done just how you want it. He will undoubtedly go that extra mile for you./x' +
       'Everything will be finished to a high spec. His permanent team follow suit and are respectful, cheerful and a pleasure to have around./x' +
       'We have had the first part of our extension done and we are more than delighted with it. We are now looking forward to the second phase of our extension and know we are in excellent hands.',
-    imageURL: '',
+    imageURL: '.images/project-images/malvern-extension-hampden-2-original.jpg',
   },
 ];
