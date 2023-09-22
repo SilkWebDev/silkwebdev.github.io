@@ -346,7 +346,7 @@ const testimonials = [
     excerpt:
       'We have used Jim Kerr Building Services for over 20 years now. Jim is reliable, trustworthy and a pleasure to work with. With high quality results every time, I would have no hesitation in recommending Jim Kerr to domestic or commercial clients.',
     testimony: '',
-    imageURL: './images/home-hero.avif',
+    imageURL: './images/project-images/callowend-nb-1280w.jpg',
   },
   {
     title: 'Mr. & Mrs. Phil & Jill Shepherd',

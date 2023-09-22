@@ -42,7 +42,7 @@
   --default-bg-color: #FFFFFF;
   --offset-bg-color: rgba(160, 169, 176, 0.05);
 
-  --default-title-font-family: 'Montserrat, Regular', sans-serif;
+  --default-title-font-family: 'Montserrat', sans-serif;
   --default-body-font-family: 'Quicksand', sans-serif;
 }
 
@@ -633,7 +633,7 @@
       }
 
       > ul > li {
-        list-style-image: url('../images/icons/check2-circle.svg');
+        list-style-image: url('../images/icons/check-circle.svg');
       }    
 
       > p, ul {
