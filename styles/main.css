@@ -56,7 +56,7 @@
   }
 
   form {
-    font-family: 'Montserrat, Regular', sans-serif;
+    font-family: var(--default-title-font-family);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -553,7 +553,7 @@
       border-radius: 5px 5px 5px 5px;
       padding: 20px;  
       text-align: justify;  
-      width: 90%;
+      /* width: 90%; */
   
       > p:last-child {
         margin-bottom: 0;
