@@ -79,6 +79,28 @@
 
 /* #region CLASS STYLES */
 
+  .cta-btn {
+    background-color: #FFFFFF;
+    border: var(--secondary-color) solid 5px;
+    color: var(--secondary-color);
+    font-family: var(--default-title-font-family);
+    font-size: 110%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 10px 3px 0px 3px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: max-content;
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      color: var(--tertiary-offset-secondary-color);
+      border-color: var(--tertiary-offset-secondary-color);
+    }
+  }
+
   .card {
     box-shadow: 0 2px 2px rgba(173, 173, 173, 0.35);
     -webkit-box-shadow: 0 2px 2px rgba(173, 173, 173, 0.35);
