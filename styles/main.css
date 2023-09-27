@@ -269,6 +269,10 @@
     margin: auto;
     max-height: 90vh;
     max-width: 90vw;
+
+    min-width: 360px;
+    min-height: 360px;
+
     padding: 0;
     position: relative;
 
