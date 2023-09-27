@@ -192,14 +192,11 @@ class GalleryImageItem extends HTMLElement {
   connectedCallback() {
     this.hasAttribute('img-src')
       ? (this.image.src = this.getAttribute('img-src'))
-      : (this.image.src = 'https://dummyimage.com/360x360/');
-    // if (this.hasAttribute('img-srcset') && this.hasAttribute('img-sizes')) {
+      : (this.image.src = '');
     if (this.hasAttribute('img-srcset')) {
       this.image.srcset = this.getAttribute('img-srcset');
       this.image.sizes = this.#sizes;
-      // this.image.sizes = this.getAttribute('img-sizes');
     }
-
     this.appendChild(this.html);
   }
 }
