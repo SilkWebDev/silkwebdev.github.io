@@ -2,36 +2,6 @@ function getTestimonialModalId() {
   return 'testimonialImageModal';
 }
 
-function createImageModal() {
-  const modal = document.createElement('div');
-
-  modal.classList.add('modal');
-
-  const closeButton = document.createElement('span');
-  closeButton.classList.add('close', 'cursor');
-  closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
-  closeButton.innerHTML = '&times;';
-
-  const modalContent = document.createElement('div');
-  modalContent.classList.add('modal-content');
-
-  const modalImage = document.createElement('img');
-  modalImage.style =
-    'object-fit: cover; height: 100%; max-width: 100%; margin: auto; border-radius: 0.5rem;';
-  modalContent.appendChild(closeButton);
-  modalContent.appendChild(modalImage);
-
-  modal.appendChild(modalContent);
-  return modal;
-}
-
-function createTestimonialModal() {
-  const modal = createImageModal();
-  document.getElementById(getTestimonialModalId()).appendChild(modal);
-}
-
 function openTestimonialImageModal(testimonialId) {
   const modal = document
     .getElementById(getTestimonialModalId())
@@ -48,11 +18,6 @@ function openTestimonialImageModal(testimonialId) {
 function openModal(modalId) {
   const modal = document.getElementById(modalId);
   modal.style.display = 'flex';
-}
-
-function createImageModalAtId(id) {
-  const modal = createImageModal();
-  document.getElementById(id).appendChild(modal);
 }
 
 function createModalFooter() {
@@ -88,7 +53,7 @@ function createModalFooter() {
   return modalFooter;
 }
 
-function createGalleryModalAtId(id) {
+function createImgModal(id, footer = false) {
   const modal = document.createElement('div');
 
   modal.classList.add('modal');
@@ -99,17 +64,18 @@ function createGalleryModalAtId(id) {
     modal.style.display = 'none';
   });
   closeButton.innerHTML = '<i class="bi bi-x"></i>';
-  // closeButton.innerHTML = '&times;';
 
   const modalContent = document.createElement('div');
-  modalContent.classList.add('gallery-image-modal-content');
+  modalContent.classList.add('img-modal-content');
 
   const modalImage = document.createElement('img');
   modalContent.appendChild(closeButton);
   modalContent.appendChild(modalImage);
 
-  const modalFooter = createModalFooter();
-  modalContent.append(modalFooter);
+  if (footer) {
+    const modalFooter = createModalFooter();
+    modalContent.append(modalFooter);
+  }
 
   modal.appendChild(modalContent);
   document.getElementById(id).appendChild(modal);

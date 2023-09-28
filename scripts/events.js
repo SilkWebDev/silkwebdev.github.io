@@ -1,3 +1,13 @@
+const domElements = {
+  toggleIcon: null,
+  heroText: null,
+};
+
+const filterState = {
+  filterCount: 0,
+  hasInteracted: false,
+};
+
 function toggleButtonClicked(elem) {
   if (!elem.hasAttribute('aria-expanded')) return;
 
@@ -26,16 +36,6 @@ function getHeroTextElement() {
   }
   return domElements.heroText;
 }
-
-const domElements = {
-  toggleIcon: null,
-  heroText: null,
-};
-
-const filterState = {
-  filterCount: 0,
-  hasInteracted: false,
-};
 
 function clearFilters() {
   resetFilters();
@@ -105,7 +105,4 @@ function resetFilters() {
     .forEach((elem) => {
       elem.classList.remove('active');
     });
-  // [].slice.call(document.querySelectorAll('.filter-button')).forEach((elem) => {
-  //   elem.classList.remove('active');
-  // });
 }
