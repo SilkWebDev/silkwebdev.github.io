@@ -111,9 +111,6 @@ function createFooterButtons(testimonialId, testimony, imageURL) {
       'data-bs-target',
       generateCollapseClass(testimonialId, true)
     );
-    link.addEventListener('click', () => {
-      toggleTestimonialText(button);
-    });
 
     const spanButtonOne = document.createElement('span');
     const iconButtonOne = document.createElement('i');
