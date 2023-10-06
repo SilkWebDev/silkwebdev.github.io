@@ -29,7 +29,6 @@ class OffHeader extends HTMLElement {
                   aria-controls="navContent"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
-                  onclick="toggleButtonClicked(this)"
                 >
                   <span>
                     <i class="bi-list" id="hamburger-icon"></i>
