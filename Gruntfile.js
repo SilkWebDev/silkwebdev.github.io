@@ -37,16 +37,16 @@ module.exports = function (grunt) {
         },
       },
     },
-    cssmin: {
-      dist: {
-        src: ['src/styles/main.css'],
-        dest: 'dist/styles/main.css',
-      },
-    },
+    // cssmin: {
+    //   dist: {
+    //     src: ['src/styles/main.css'],
+    //     dest: 'dist/styles/main.css',
+    //   },
+    // },
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin']);
+  grunt.registerTask('default', ['uglify', 'htmlmin']);
 };
