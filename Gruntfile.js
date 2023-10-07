@@ -3,13 +3,13 @@ module.exports = function (grunt) {
     uglify: {
       my_target: {
         files: {
-          'dist/scripts/gallery.min.js': ['src/scripts/gallery.js'],
-          'dist/scripts/io.min.js': ['src/scripts/io.js'],
-          'dist/scripts/modal.min.js': ['src/scripts/modal.js'],
-          'dist/scripts/testimonials.min.js': ['src/scripts/testimonials.js'],
-          'dist/components/header.min.js': ['src/components/header.js'],
-          'dist/components/footer.min.js': ['src/components/footer.js'],
-          'dist/components/gallery-image-item.min.js': [
+          'dist/scripts/gallery.js': ['src/scripts/gallery.js'],
+          'dist/scripts/io.js': ['src/scripts/io.js'],
+          'dist/scripts/modal.js': ['src/scripts/modal.js'],
+          'dist/scripts/testimonials.js': ['src/scripts/testimonials.js'],
+          'dist/components/header.js': ['src/components/header.js'],
+          'dist/components/footer.js': ['src/components/footer.js'],
+          'dist/components/gallery-image-item.js': [
             'src/components/gallery-image-item.js',
           ],
         },
@@ -24,16 +24,16 @@ module.exports = function (grunt) {
           removeRedundantAttributes: true,
           removeScriptTypeAttributes: true,
           removeTagWhitespace: true,
-          useShortDoctype: true,
+          // useShortDoctype: true,
           minifyCSS: true,
           minifyJS: true,
           minifyURLs: true,
         },
         files: {
-          'index.html': 'index.max.html',
-          'services.html': 'services.max.html',
-          'project-gallery.html': 'project-gallery.max.html',
-          'contact-us.html': 'contact-us.max.html',
+          'dist/index.html': 'src/index.html',
+          'dist/services.html': 'src/services.html',
+          'dist/project-gallery.html': 'src/project-gallery.html',
+          'dist/contact-us.html': 'src/contact-us.html',
         },
       },
     },

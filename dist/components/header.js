@@ -1,10 +1,4 @@
-class OffHeader extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `
+class OffHeader extends HTMLElement{constructor(){super()}connectedCallback(){this.innerHTML=`
       <div style="height: auto">
           <div class="container navbar-container subpage-navbar">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -63,7 +57,4 @@ class OffHeader extends HTMLElement {
               </div>
             </nav>
           </div>
-      </div>`;
-  }
-}
-customElements.define('off-header-element', OffHeader);
+      </div>`}}customElements.define("off-header-element",OffHeader);
