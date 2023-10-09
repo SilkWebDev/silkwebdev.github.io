@@ -1,5 +1,12 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    sass: {
+      docs: {
+        files: {
+          'src/styles/main.css': 'src/styles/main.scss',
+        },
+      },
+    },
     uglify: {
       docs: {
         files: {
@@ -23,9 +30,6 @@ module.exports = function (grunt) {
           removeRedundantAttributes: true,
           removeScriptTypeAttributes: true,
           removeTagWhitespace: true,
-          minifyCSS: true,
-          minifyJS: true,
-          minifyURLs: true,
         },
         files: {
           'docs/index.html': 'src/index.html',
@@ -43,8 +47,9 @@ module.exports = function (grunt) {
     },
   });
 
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin']);
+  grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'sass']);
 };
