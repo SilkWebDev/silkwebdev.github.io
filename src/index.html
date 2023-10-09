@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="./../images/site-logo-50w.png" />
+    <script defer type="module">
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/testimonials.js"></script>
+    <script src="scripts/io.js" defer></script>
+    <script src="components/footer.js"></script>
+    <title>
+      Malvern and Worcestershire Builders | New Builds, Extensions, Conversions
+      and Renovations | J. S. Kerr Building Limited
+    </title>
+  </head>
+  <body>
+    <div class="hero" id="top">
+      <!-- #region Navbar -->
+      <div class="container navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                id="site-logo"
+                src="./../images/site-logo-128w.png"
+                srcset="
+                  ./../images/site-logo-50w.png   50w,
+                  ./../images/site-logo-128w.png 128w
+                "
+                sizes="(max-width: 767px) 50px, 100px"
+                alt="J. S. Kerr Building Limited logo"
+              />
+              <h1 id="site-brand-text">
+                J. S. Kerr <br />
+                Building Limited
+              </h1>
+            </a>
+            <!-- #region Toggle dropdown -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target=".hero-collapse"
+              aria-controls="hero-collapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span>
+                <i class="bi-list" id="hamburger-icon"></i>
+              </span>
+            </button>
+            <!-- #endregion -->
+            <div
+              class="collapse navbar-collapse justify-content-end hero-collapse"
+              id="navContent"
+            >
+              <ul class="navbar-nav ml-auto mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project-gallery.html"
+                    >Project Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- #endregion -->
+      <div class="container hero-text collapse show hero-collapse">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-header">Complete Building Projects and Services</h1>
+          <h2 class="hero-header">
+            Malvern, Worcester and the Surrounding Areas
+          </h2>
+          <div
+            class="hero-buttons d-flex flex-row flex-wrap justify-content-evenly"
+          >
+            <a class="hero-button grow" href="project-gallery.html"
+              >Project Gallery</a
+            >
+            <a class="hero-button grow" href="#testimonials">Testimonials</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div id="testimonialImageModal">
+        <script defer>
+          createImgModal('testimonialImageModal');
+        </script>
+      </div>
+      <section id="overview">
+        <div class="wrapper">
+          <h2 class="h2">Overview</h2>
+          <hr />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="flex-column col-12 col-xxl-3 col-md-6">
+                <div class="flex-item">
+                  <div class="overview-title-bar">
+                    <h3 class="overview-title">Locations</h3>
+                    <span class="overview-icon"
+                      ><i class="bi bi-geo-alt"></i>
+                    </span>
+                  </div>
+                  <p>
+                    Primarily serving Malvern, Worcester and the Surrounding
+                    Areas
+                  </p>
+                  <p>
+                    Including clients in Cheltenham, Gloucester, Evesham and
+                    further afield
+                  </p>
+                </div>
+              </div>
+              <div class="flex-column col-12 col-xxl-3 col-md-6">
+                <div class="flex-item">
+                  <div class="overview-title-bar">
+                    <h3 class="overview-title">Experience</h3>
+                    <span class="overview-icon"
+                      ><i class="bi bi-person-gear"></i
+                    ></span>
+                  </div>
+                  <ul>
+                    <li>35+ years of professional building experience</li>
+                    <li>7+ years of managing building projects</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex-column col-12 col-xxl-3 col-md-6">
+                <div class="flex-item">
+                  <div class="overview-title-bar">
+                    <h3 class="overview-title">Expertise</h3>
+                    <span class="overview-icon"
+                      ><i class="bi bi-house-check"></i
+                    ></span>
+                  </div>
+                  <ul>
+                    <li>Extensions</li>
+                    <li>New Builds</li>
+                    <li>Barn Conversions</li>
+                    <li>Renovations</li>
+                    <li>Landscaping</li>
+                  </ul>
+                  <p>
+                    See our <a href="services.html">Services</a> page for more
+                    details.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-column col-12 col-xxl-3 col-md-6">
+                <div class="flex-item">
+                  <div class="overview-title-bar">
+                    <h3 class="overview-title">Enquiries</h3>
+                    <span class="overview-icon"
+                      ><i class="bi bi-chat"></i
+                    ></span>
+                  </div>
+                  <p>
+                    We understand the need and encourage our prospective clients
+                    to consider all of their options.
+                  </p>
+                  <p>
+                    Please feel free to
+                    <a href="contact-us.html">Contact Us</a>
+                    with any enquiry and/or for a free estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="wrapper">
+          <h2 class="h2">Testimonials</h2>
+          <div class="container-fluid">
+            <div class="row align-middle">
+              <div class="testimonial-col col-12 col-lg-6">
+                <div
+                  class="row row-cols-12"
+                  id="testimonial-column-1"
+                  style="flex-direction: column"
+                >
+                  <div class="testimonial col" data-url="" id="testimonial-1">
+                    <div class="card slide-up invisible">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Lydia &amp; Jamie</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-1"
+                        >
+                          <q
+                            >From our initial meeting to having the final
+                            extension signed off, Jim and his team delivered on
+                            every aspect.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-1">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              As everyone does when investing in their property,
+                              you look for a builder who listens to your needs,
+                              understands your vision and tries to make that a
+                              reality.
+                            </p>
+                            <p>
+                              From our initial meeting to having the final
+                              extension signed off, Jim and his team delivered
+                              on every aspect. They were polite, honest, clean
+                              and communicated with us throughout the whole
+                              process.
+                            </p>
+                            <p>
+                              Jim and his team have helped us turn our house
+                              into a forever home and we can not praise enough
+                              the extremely high quality of their work. We will
+                              only be using Jim for any interior or exterior
+                              work in the future as we know the end results will
+                              be nothing but superb.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-1"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="testimonial col"
+                    data-url="./../images/project-images/extension/ex-churchill-1-1200w.jpg"
+                    id="testimonial-3"
+                  >
+                    <div class="card slide-up invisible">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">John &amp; Sally</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-3"
+                        >
+                          <q
+                            >We are also very satisfied with the work you have
+                            completed and the difference it has made to the
+                            property and would have no issues in recommending
+                            yourself to others.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-3">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              We have only praise for yourself and your fellow
+                              workers, all of which were very courteous and
+                              helpful during the extension works. It was very
+                              pleasing to see that at the end of every day
+                              everything was left clean and tidy.
+                            </p>
+                            <p>
+                              We received many comments from neighbours and
+                              passers-by who commented on what a good job you
+                              were making and how clean and tidy you left it. We
+                              are also very satisfied with the work you have
+                              completed and the difference it has made to the
+                              property and would have no issues in recommending
+                              yourself to others.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-3"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                          <li class="testimonial-button">
+                            <a class="btn btn-primary"
+                              ><span><i class="bi-images"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testimonial col" data-url="" id="testimonial-5">
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Ron &amp; Alison</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Kempsey
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-5"
+                        >
+                          <q
+                            >Jim would explain what the next phase entailed so
+                            that we knew exactly what would be happening next
+                            and who would be with us the next day. We are
+                            delighted with the end result and have no hesitation
+                            in recommending J. S. Kerr Building Ltd.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-5">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              We chose Jim Kerr to build our garden room
+                              extension following a recommendation by our
+                              architect and we weren't disappointed as he proved
+                              to be knowledgeable in all aspects of the build
+                              from studying the plans (and tweaking them where
+                              necessary) to constructing the building.
+                            </p>
+                            <p>
+                              He liaised confidently with Building Control, with
+                              whom he has a good relationship, the thermal
+                              energy consultant and the glazing supplier. The
+                              build was certainly not without its complications
+                              but Jim and Dan, the groundworks expert, dealt
+                              with these without being phased in the slightest.
+                            </p>
+                            <p>
+                              We are in a low lying position with little fall
+                              but Jim designed and put in place, with Daryl and
+                              James, a system to take away the rainwater. This
+                              involved digging a trench across the lawn but by
+                              the time they had finished we could hardly notice
+                              that it had been disturbed.
+                            </p>
+                            <p>
+                              Jim and his team plus all the various tradesmen
+                              without exception were polite, friendly, helpful
+                              and tidy. Virtually at the end of every day Jim
+                              would explain what the next phase entailed so that
+                              we knew exactly what would be happening next and
+                              who would be with us the next day. We are
+                              delighted with the end result and have no
+                              hesitation in recommending J. S. Kerr Building
+                              Ltd.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-5"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="testimonial col"
+                    data-url="./../images/project-images/new-build/callowend-nb-2-og-1200w.jpg"
+                    id="testimonial-7"
+                  >
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Richard Ralph, MRICS</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Callow End
+                            </h6>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-7"
+                        >
+                          <q
+                            >We have used Jim Kerr Building Services for over 20
+                            years now. Jim is reliable, trustworthy and a
+                            pleasure to work with. With high quality results
+                            every time, I would have no hesitation in
+                            recommending Jim Kerr to domestic or commercial
+                            clients.</q
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse-testimonial-7"
+                        ></div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a class="btn btn-primary"
+                              ><span><i class="bi-images"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="testimonial col"
+                    data-url="./../images/project-images/conversion/cv-upton-3-1200w.jpg"
+                    id="testimonial-9"
+                  >
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Rob Minshull</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Barn Conversion &amp; Landscaping,
+                              Upton-upon-Severn
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-gear"></i>
+                            </div>
+                            <div class="card-title-bar-icon">
+                              <i class="bi-tree"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-9"
+                        >
+                          <q
+                            >Jim Kerr and his team provide a totally
+                            professional and experienced building service. He
+                            manages the whole process from inception to
+                            completion, dealing with all aspects of the project.
+                            We would strongly recommend his company.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-9">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              Jim Kerr and his team provide a totally
+                              professional and experienced building service.
+                            </p>
+                            <p>
+                              Jim has undertaken several projects for us from
+                              Barn Conversions to Patio Constructions over the
+                              years and is always attentive and thoughtful in
+                              discussing your requirements. He has great
+                              knowledge and skill, and provides that extra care
+                              which produces excellent workmanship.
+                            </p>
+                            <p>
+                              He manages the whole process from inception to
+                              completion, dealing with all aspects of the
+                              project. We would strongly recommend his company.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-9"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                          <li class="testimonial-button">
+                            <a class="btn btn-primary"
+                              ><span><i class="bi-images"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-col col-12 col-lg-6">
+                <div
+                  class="row row-cols-12"
+                  id="testimonial-column-2"
+                  style="flex-direction: column"
+                >
+                  <div class="testimonial col" data-url="" id="testimonial-2">
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">
+                              Tom &amp; Jennie Hermolle
+                            </h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension &amp; Renovation, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-2"
+                        >
+                          <q
+                            >Jim has a fantastic team working with him who are
+                            all well-briefed, know what they are doing, work
+                            hard and importantly (especially as our family were
+                            living in the middle of the building works) we
+                            couldn't have asked for a nicer, more considerate
+                            team to be working on our house for months on end.
+                            They all take real pride in their work and go above
+                            and beyond to deliver the right outcome.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-2">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              Jim completed a kitchen-diner extension plus
+                              partial 2-story extension (and internal
+                              re-modeling) of our 1930s house. Due to the nature
+                              of the house (suspended floors and a big drop at
+                              the rear of the property) and some key elements of
+                              the design, it was not a straightforward job but
+                              Jim and his team were excellent throughout.
+                            </p>
+                            <p>
+                              The communication from Jim was always great and
+                              they always arrived and carried out work as
+                              agreed. Jim has a fantastic team working with him
+                              who are all well-briefed, know what they are
+                              doing, work hard and importantly (especially as
+                              our family were living in the middle of the
+                              building works) we couldn't have asked for a
+                              nicer, more considerate team to be working on our
+                              house for months on end. They all take real pride
+                              in their work and go above and beyond to deliver
+                              the right outcome.
+                            </p>
+                            <p>
+                              There were some technical challenges in the design
+                              e.g. with some extremely large steels that had
+                              been specified. Jim ensured that he found a way to
+                              make it work. We are very pleased with the end
+                              result and would highly recommend Jim and his
+                              team.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-2"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="testimonial col"
+                    data-url="./../images/project-images/conversion/cv-kempsey-4-1200w.jpg"
+                    id="testimonial-4"
+                  >
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Peter &amp; Sue Rimell</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Barn Conversion, Kempsey
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-gear"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-4"
+                        >
+                          <q
+                            >Jim explained every stage from start to finish,
+                            making the process appear easy. This was not a
+                            project for the faint-hearted, but the results are
+                            outstanding. Thank you Team!</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-4">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              We engaged J. S. Kerr Building Limited on a
+                              recommendation from a friend (we viewed his
+                              previous barn conversions carried out for our
+                              friend). We had no building experience, and
+                              embarked on converting an old barn into our new
+                              home (see photo gallery).
+                            </p>
+                            <p>
+                              Jim explained every stage from start to finish,
+                              making the process appear easy. His skilled team
+                              are respectful and helpful, all working to a high
+                              standard, leaving the site tidy. This was not a
+                              project for the faint-hearted, but the results are
+                              outstanding. The oak beams created by Shane are so
+                              impressive, resulting in an overall luxurious
+                              finish.
+                            </p>
+                            <p>Thank you Team!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-4"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                          <li class="testimonial-button">
+                            <a class="btn btn-primary"
+                              ><span><i class="bi-images"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial col" data-url="" id="testimonial-6">
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Cannara B&amp;B</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-6"
+                        >
+                          <q
+                            >You have a really great team and we were really
+                            impressed with the project management of the whole
+                            thing. We will definitely ask you to do another job
+                            for us in the future!</q
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse-testimonial-6"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial col" data-url="" id="testimonial-8">
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">
+                              Mr. &amp; Mrs. Phil &amp; Jill Shepherd
+                            </h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-8"
+                        >
+                          <q
+                            >We have no hesitation in recommending Jim Kerr
+                            Building Limited. Jim runs a professional and
+                            efficient team and his knowledge of the building
+                            industry is extensive from the realisation of
+                            planning applications, management of building
+                            regulations to the acquisition of appropriate
+                            materials.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-8">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              We have no hesitation in recommending Jim Kerr
+                              Building Limited. Jim runs a professional and
+                              efficient team and his knowledge of the building
+                              industry is extensive from the realisation of
+                              planning applications, management of building
+                              regulations to the acquisition of appropriate
+                              materials.
+                            </p>
+                            <p>
+                              We engaged the services of Jim Kerr for a single
+                              storey extension to our semi-detached Victorian
+                              property. The first phase had been undertaken by a
+                              previous builder but Jim was happy to undertake
+                              the further work required.
+                            </p>
+                            <p>
+                              From groundworks to the final finish, Jim used
+                              reliable, prompt and efficient tradesmen and
+                              supervised the job throughout, ensuring steel
+                              supports were correctly installed and setting up
+                              the new insulated floor at the correct level.
+                            </p>
+                            <p>
+                              The job was not without challenges but Jim
+                              approached these with a calm and professional
+                              manner. Jim was quick to respond to any queries or
+                              concerns we, as clients, might have, almost always
+                              with a personal phone call. The electricians,
+                              plumbers, heating engineers, plasterers, painters
+                              and roofers, all worked to a high standard.
+                            </p>
+                            <p>
+                              Jim insisted on leaving his site tidy, clean as
+                              possible and free from rubbish and hazards,
+                              organising all equipment at the end of each day,
+                              which really helped to keep the disruption of
+                              undertaking a building project, to a minimum.
+                            </p>
+                            <p>
+                              Jim was also a fantastic manager of his workforce,
+                              and at every point in the process, made sure work
+                              progressed smoothly and there were no hold ups.
+                              Daryl, his regular labourer, and James, were well
+                              directed, hard working and always friendly and
+                              polite. They were appreciative of teas and coffees
+                              when we could provide them, without expectation.
+                              We are both very happy with Jim's services and if
+                              he were not so busy, would keep him around to
+                              exclusively attend to our other projects.
+                            </p>
+                            <p>
+                              Seriously, we were fortunate to find him and his
+                              team and can't recommend him highly enough. Thank
+                              you, Jim.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-8"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="testimonial col"
+                    data-url="./../images/project-images/extension/ex-hampden-1-1200w.jpg"
+                    id="testimonial-10"
+                  >
+                    <div class="card invisible slide-up">
+                      <div class="card-body">
+                        <div class="card-title-bar">
+                          <div>
+                            <h5 class="card-title">Viv</h5>
+                            <h6 class="card-subtitle text-body-secondary">
+                              Extension, Malvern
+                            </h6>
+                          </div>
+                          <div class="card-title-bar-icons">
+                            <div class="card-title-bar-icon">
+                              <i class="bi-house-add"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-bar"></div>
+                        <div
+                          class="testimonial-excerpt collapse show multi-collapse-testimonial-10"
+                        >
+                          <q
+                            >Jim Kerr is an excellent builder who I have
+                            complete trust in. He is reliable, hard working,
+                            kind and caring and will do everything in his power
+                            to get a build done just how you want it.</q
+                          >
+                        </div>
+                        <div class="collapse multi-collapse-testimonial-10">
+                          <div class="expanded-testimonial-block">
+                            <p>
+                              Jim Kerr is an excellent builder who I have
+                              complete trust in.
+                            </p>
+                            <p>
+                              He is reliable, hard working, kind and caring and
+                              will do everything in his power to get a build
+                              done just how you want it. He will undoubtedly go
+                              that extra mile for you.
+                            </p>
+                            <p>
+                              Everything will be finished to a high spec. His
+                              permanent team follow suit and are respectful,
+                              cheerful and a pleasure to have around.
+                            </p>
+                            <p>
+                              We have had the first part of our extension done
+                              and we are more than delighted with it. We are now
+                              looking forward to the second phase of our
+                              extension and know we are in excellent hands.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <ul class="testimonial-buttons">
+                          <li class="testimonial-button">
+                            <a
+                              class="btn btn-primary"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".multi-collapse-testimonial-10"
+                              ><span
+                                ><i class="bi-three-dots-vertical"></i></span
+                              ><span class="hidden"><i class="bi-x"></i></span
+                            ></a>
+                          </li>
+                          <li class="testimonial-button">
+                            <a class="btn btn-primary"
+                              ><span><i class="bi-images"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer-element></footer-element>
+    <!-- #region Sidebar -->
+    <div class="icon-sidebar">
+      <a
+        href="project-gallery.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-delay="333"
+        title="Go to Project Gallery"
+      >
+        <img src="./../images/icons/images-icon.svg" alt="Project Gallery" />
+        <!-- <i class="bi bi-images"></i> -->
+      </a>
+      <a
+        href="#overview"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-delay="333"
+        title="Go to Overview Section"
+      >
+        <img src="./../images/icons/overview-icon.svg" alt="Overview" />
+        <!-- <i class="bi bi-signpost-2"></i> -->
+      </a>
+      <a
+        href="services.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-delay="333"
+        title="Go to our Services"
+      >
+        <img
+          src="./../images/icons/services-icon.svg"
+          alt="Building Services"
+        />
+        <!-- <i class="bi bi-wrench"></i> -->
+      </a>
+    </div>
+    <!-- #endregion -->
+    <div class="floating-button invisible">
+      <a
+        href="index.html#top"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-delay="333"
+        title="Return to top"
+      >
+        <img src="./../images/icons/arrow-up-circle.svg" alt="Arrow up" />
+      </a>
+    </div>
+    <script>
+      // addTestimonials(['testimonial-column-1', 'testimonial-column-2']);
+    </script>
+  </body>
+</html>

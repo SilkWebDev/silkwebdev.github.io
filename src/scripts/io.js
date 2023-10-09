@@ -18,3 +18,14 @@ const testimonialCards = document.querySelectorAll('div.card');
 testimonialCards.forEach((card) => {
   observer.observe(card);
 });
+
+const floatingButtonObserver = new IntersectionObserver((entries) => {
+  const isIntersecting = entries[0].isIntersecting;
+  const floatingButton = document.querySelector('.floating-button');
+  floatingButton.classList.toggle('invisible', isIntersecting);
+});
+
+const hero = document.querySelector('.hero');
+const floatingButton = document.querySelector('.floating-button');
+
+floatingButtonObserver.observe(hero);

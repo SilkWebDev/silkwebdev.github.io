@@ -1,41 +1,7 @@
-const domElements = {
-  toggleIcon: null,
-  heroText: null,
-};
-
 const filterState = {
   filterCount: 0,
   hasInteracted: false,
 };
-
-function toggleButtonClicked(elem) {
-  if (!elem.hasAttribute('aria-expanded')) return;
-
-  const button = getToggleButtonElement(elem);
-  button.classList.toggle('bi-list');
-  button.classList.toggle('bi-x');
-}
-
-function toggleTestimonialText(btn) {
-  const spans = btn.querySelectorAll('span');
-  for (let span of spans) {
-    span.classList.toggle('hidden');
-  }
-}
-
-function getToggleButtonElement(elem) {
-  if (domElements.toggleIcon === null) {
-    domElements.toggleIcon = elem.querySelector('#hamburger-icon');
-  }
-  return domElements.toggleIcon;
-}
-
-function getHeroTextElement() {
-  if (domElements.heroText === null) {
-    domElements.heroText = document.querySelector('.hero-text');
-  }
-  return domElements.heroText;
-}
 
 function clearFilters() {
   resetFilters();
@@ -105,4 +71,14 @@ function resetFilters() {
     .forEach((elem) => {
       elem.classList.remove('active');
     });
+}
+
+function initFilterButtons() {
+  const filterButtons = [].slice.call(
+    document.querySelectorAll('.filter-button')
+  );
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', filterButtonClick);
+  });
 }
