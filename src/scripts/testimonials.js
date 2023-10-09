@@ -258,6 +258,8 @@ function addTestimonials(columns) {
   });
 }
 
+
+
 function generateCollapseClass(testimonialId, target = false) {
   let c = 'multi-collapse-' + testimonialId;
   if (target) {

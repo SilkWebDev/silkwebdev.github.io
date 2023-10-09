@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <script
-      defer
+      defer="defer"
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
@@ -27,7 +27,7 @@
     />
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="icon" type="image/x-icon" href="./../images/site-logo-50w.png" />
-    <script defer type="module">
+    <script defer="defer" type="module">
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
       );
@@ -37,7 +37,7 @@
     </script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/testimonials.js"></script>
-    <script src="scripts/io.js" defer></script>
+    <script src="scripts/io.js" defer="defer"></script>
     <script src="components/footer.js"></script>
     <title>
       Malvern and Worcestershire Builders | New Builds, Extensions, Conversions
@@ -46,7 +46,6 @@
   </head>
   <body>
     <div class="hero" id="top">
-      <!-- #region Navbar -->
       <div class="container navbar-container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
@@ -66,7 +65,7 @@
                 Building Limited
               </h1>
             </a>
-            <!-- #region Toggle dropdown -->
+
             <button
               class="navbar-toggler"
               type="button"
@@ -80,7 +79,7 @@
                 <i class="bi-list" id="hamburger-icon"></i>
               </span>
             </button>
-            <!-- #endregion -->
+
             <div
               class="collapse navbar-collapse justify-content-end hero-collapse"
               id="navContent"
@@ -110,7 +109,7 @@
           </div>
         </nav>
       </div>
-      <!-- #endregion -->
+
       <div class="container hero-text collapse show hero-collapse">
         <div class="hero-text-wrapper">
           <h1 class="hero-header">Complete Building Projects and Services</h1>
@@ -130,7 +129,7 @@
     </div>
     <main>
       <div id="testimonialImageModal">
-        <script defer>
+        <script defer="defer">
           createImgModal('testimonialImageModal');
         </script>
       </div>
@@ -977,7 +976,7 @@
       </section>
     </main>
     <footer-element></footer-element>
-    <!-- #region Sidebar -->
+
     <div class="icon-sidebar">
       <a
         href="project-gallery.html"
@@ -987,7 +986,6 @@
         title="Go to Project Gallery"
       >
         <img src="./../images/icons/images-icon.svg" alt="Project Gallery" />
-        <!-- <i class="bi bi-images"></i> -->
       </a>
       <a
         href="#overview"
@@ -997,7 +995,6 @@
         title="Go to Overview Section"
       >
         <img src="./../images/icons/overview-icon.svg" alt="Overview" />
-        <!-- <i class="bi bi-signpost-2"></i> -->
       </a>
       <a
         href="services.html"
@@ -1010,10 +1007,9 @@
           src="./../images/icons/services-icon.svg"
           alt="Building Services"
         />
-        <!-- <i class="bi bi-wrench"></i> -->
       </a>
     </div>
-    <!-- #endregion -->
+
     <div class="floating-button invisible">
       <a
         href="index.html#top"
@@ -1025,8 +1021,6 @@
         <img src="./../images/icons/arrow-up-circle.svg" alt="Arrow up" />
       </a>
     </div>
-    <script>
-      // addTestimonials(['testimonial-column-1', 'testimonial-column-2']);
-    </script>
+    <script></script>
   </body>
 </html>
