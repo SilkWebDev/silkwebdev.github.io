@@ -351,9 +351,9 @@
     z-index: 1;
     top: 100%;
     left: 100%;
-    -webkit-transform: translate(-200%, -200%);
-    -ms-transform: translate(-200%, -200%);
-    transform: translate(-200%, -200%);
+    -webkit-transform: translate(-120%, -120%);
+    -ms-transform: translate(-120%, -120%);
+    transform: translate(-120%, -120%);
     opacity: 0.5;
     transition: all 0.3s ease;
   }
@@ -807,6 +807,12 @@
     .container-fluid {
       padding-right: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .floating-button {
+      -webkit-transform: translate(-150%, -150%);
+      -ms-transform: translate(-150%, -150%);
+      transform: translate(-150%, -150%);
     }
 
     .gallery-images {
