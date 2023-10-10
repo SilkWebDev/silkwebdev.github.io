@@ -74,6 +74,6 @@ module.exports = function (grunt) {
     'uglify',
     'htmlmin',
     'cssmin',
-    'imagemin',
+    // 'imagemin',
   ]);
 };
