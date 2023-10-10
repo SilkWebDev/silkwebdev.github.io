@@ -1,3 +1,5 @@
+const mozjpeg = require('imagemin-mozjpeg'); // use v9.0.0
+
 module.exports = function (grunt) {
   grunt.initConfig({
     sass: {
@@ -45,11 +47,33 @@ module.exports = function (grunt) {
         dest: 'docs/styles/main.css',
       },
     },
+    imagemin: {
+      dynamic: {
+        options: {
+          use: [mozjpeg()],
+        },
+        files: [
+          {
+            cwd: './images/',
+            expand: true,
+            src: ['**/*.{jpg,png}'],
+            dest: './images',
+          },
+        ],
+      },
+    },
   });
 
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'sass']);
+  grunt.registerTask('default', [
+    'sass',
+    'uglify',
+    'htmlmin',
+    'cssmin',
+    'imagemin',
+  ]);
 };

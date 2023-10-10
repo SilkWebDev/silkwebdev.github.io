@@ -439,8 +439,8 @@ footer {
   border-radius: 50%;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px; }
+  width: 50px !important;
+  height: 50px !important; }
 
 #site-brand-text {
   color: white;
@@ -583,33 +583,9 @@ footer {
       text-align: center; }
 
   .icon-sidebar {
-    display: block;
     background-color: var(--primary-color);
-    border-radius: 10px 10px 0 0;
-    position: fixed;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -100%);
-    -ms-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
-    z-index: 1; }
-    .icon-sidebar:hover > a > img {
-      opacity: 0.5; }
-    .icon-sidebar > a {
-      display: inline-block;
-      font-size: 20px;
-      padding: 10px 14px;
-      text-align: center;
-      transition: all 0.3s ease; }
-      .icon-sidebar > a:hover > img {
-        opacity: 1 !important;
-        transform: scale(1.1); }
-      .icon-sidebar > a > img {
-        width: 20px;
-        height: auto; }
-
-  .icon-sidebar {
     border-radius: 0 10px 10px 0;
+    display: block;
     position: fixed;
     top: 50%;
     left: auto;
@@ -621,12 +597,17 @@ footer {
       -webkit-transform: translate(0, -50%) !important;
       -ms-transform: translate(0, -50%) !important;
       transform: translate(0, -50%) !important; }
+      .icon-sidebar:hover > a > img {
+        opacity: 0.5; }
     .icon-sidebar > a {
       display: block;
       font-size: 20px;
       padding: 16px;
       text-align: center;
       transition: all 0.3s ease; }
+      .icon-sidebar > a:hover > img {
+        opacity: 1 !important;
+        transform: scale(1.1); }
       .icon-sidebar > a > img {
         width: 22px;
         height: auto; }
@@ -637,17 +618,12 @@ footer {
   /* #endregion */
   /* #region ID STYLES */
   #site-logo {
-    border-radius: 50%;
-    height: auto;
-    vertical-align: middle;
-    width: 100px; }
+    height: 100px !important;
+    width: 100px !important; }
 
   #site-brand-text {
-    color: white;
     font-size: 1.5rem;
-    font-weight: 600;
     margin: auto 0 auto 20px;
-    text-transform: uppercase;
     vertical-align: middle; }
 
   /* #endregion */ }
@@ -692,19 +668,8 @@ footer {
   #overview .container {
     padding: 0; }
 
-  #site-logo {
-    border-radius: 50%;
-    height: auto;
-    vertical-align: middle;
-    width: 100px; }
-
   #site-brand-text {
-    color: white;
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin: auto 0 auto 20px;
-    text-transform: uppercase;
-    vertical-align: middle; }
+    font-size: 1.75rem; }
 
   #testimonials > h2.h2 {
     padding-bottom: 20px; }

@@ -1,15 +1,19 @@
 class GalleryImageItem extends HTMLElement {
   #modalId = 'galleryImageModal';
   #sizes =
-    '(max-width: 575px) 100vw, (max-width: 991px) 50vw, (max-width: 1199px) 333px, 400px';
-
+    '(min-width: 1920px) 364px, (min-width: 1200px) 297px, (min-width: 1000px) calc(33.33vw - 78px), (min-width: 780px) calc(50vw - 104px), (min-width: 580px) calc(50vw - 61px), calc(100vw - 98px)';
+  #numberBeforeFold = 6;
   constructor() {
     super();
     this.html = document.createElement('div');
     this.html.classList.add('col', 'gallery-image-item');
     this.image = document.createElement('img');
     this.image.classList.add('gallery-image');
-    this.image.setAttribute('loading', 'lazy');
+    if (this.#numberBeforeFold > 0) {
+      this.#numberBeforeFold--;
+    } else {
+      this.image.setAttribute('loading', 'lazy');
+    }
     this.image.addEventListener('click', () => {
       const modal = document
         .getElementById(this.#modalId)
