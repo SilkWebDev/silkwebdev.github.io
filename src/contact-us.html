@@ -77,13 +77,18 @@
                       <h3 class="info-title">Contact Form</h3>
                       <span class="info-icon"><i class="bi bi-list"></i> </span>
                     </div>
-                    <form class="pt-2">
+                    <form
+                      class="pt-2"
+                      action="https://formsubmit.co/jskbwk@gmail.com"
+                      method="POST"
+                    >
                       <div class="row g-2">
                         <div class="col-12">
                           <input
                             type="text"
                             class="form-control"
                             placeholder="Your Name"
+                            name="name"
                             aria-label="name"
                             required
                           />
@@ -91,9 +96,9 @@
                         <div class="col-12">
                           <input
                             type="email"
-                            name="email"
                             class="form-control"
                             placeholder="Your Email"
+                            name="email"
                             aria-label="email"
                             required
                           />
@@ -116,6 +121,12 @@
                           </button>
                         </div>
                       </div>
+                      <input type="hidden" name="_next" value="#" />
+                      <input
+                        type="hidden"
+                        name="_autoresponse"
+                        value="We can confirm that your email has reached our J. S. Kerr Building Limited inbox. We will get back to you as soon as possible. Thank you."
+                      />
                     </form>
                   </div>
                 </div>
