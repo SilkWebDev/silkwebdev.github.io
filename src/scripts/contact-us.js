@@ -43,3 +43,9 @@ contactForm.addEventListener('submit', submitForm);
 const outputText = contactForm.querySelector('#response');
 const submitBtn = contactForm.querySelector('#submit-button');
 const sendingBtn = contactForm.querySelector('#sending-button');
+const resetBtn = contactForm.querySelector('#reset-button');
+
+resetBtn.addEventListener('click', (e) => {
+  outputText.innerHTML = '';
+  outputText.classList.add('hidden');
+});
