@@ -29,6 +29,7 @@
     <link rel="icon" type="image/x-icon" href="./../images/site-logo-50w.png" />
     <script src="./components/header.js"></script>
     <script src="./components/footer.js"></script>
+    <script src="./scripts/contact-us.js" defer></script>
     <title>Contact Us | J. S. Kerr Building Limited</title>
   </head>
   <body>
@@ -79,7 +80,8 @@
                     </div>
                     <form
                       class="pt-2"
-                      action="https://formsubmit.co/ba30b0f8e72636e408bd5a23ef108990"
+                      name="contact-form"
+                      action=""
                       method="POST"
                     >
                       <div class="row g-2">
@@ -113,8 +115,25 @@
                           ></textarea>
                         </div>
                         <div class="col-12 d-flex justify-content-end gap-2">
-                          <button type="submit" class="btn btn-primary">
+                          <button
+                            type="submit"
+                            class="btn btn-primary"
+                            id="submit-button"
+                          >
                             Send
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary hidden"
+                            id="sending-button"
+                            disabled
+                          >
+                            <span
+                              class="spinner-border spinner-border-sm"
+                              role="status"
+                              aria-hidden="true"
+                            ></span>
+                            Sending...
                           </button>
                           <button type="reset" class="btn btn-warning">
                             Reset
@@ -128,6 +147,7 @@
                         value="We can confirm that your email has reached our J. S. Kerr Building Limited inbox. We will get back to you as soon as possible. Thank you."
                       />
                       <input type="hidden" name="_captcha" value="true" />
+                      <p class="hidden mt-3 mb-3 text-center" id="response"></p>
                     </form>
                   </div>
                 </div>

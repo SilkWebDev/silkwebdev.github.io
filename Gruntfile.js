@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     uglify: {
       docs: {
         files: {
+          'docs/scripts/contact-us.js': ['src/scripts/contact-us.js'],
           'docs/scripts/gallery.js': ['src/scripts/gallery.js'],
           'docs/scripts/io.js': ['src/scripts/io.js'],
           'docs/scripts/modal.js': ['src/scripts/modal.js'],
@@ -69,11 +70,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', [
+  grunt.registerTask('default', ['sass', 'uglify', 'htmlmin', 'cssmin']);
+  grunt.registerTask('all', [
     'sass',
     'uglify',
     'htmlmin',
     'cssmin',
-    // 'imagemin',
+    'imagemin',
   ]);
 };
