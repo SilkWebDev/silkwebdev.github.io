@@ -6,6 +6,7 @@ const filterState = {
 function clearFilters() {
   resetFilters();
   showAllCategories();
+  toggleInfoText();
 }
 
 function filterButtonClick() {
@@ -21,8 +22,6 @@ function filterButtonClick() {
   this.classList.contains('active')
     ? filterState.filterCount++
     : filterState.filterCount--;
-  console.log(this);
-  console.log(filterState.filterCount);
 
   // Gallery is empty, so we can choose a default behaviour. Currently, when no filters
   // are active, we display every gallery element again
@@ -35,6 +34,8 @@ function filterButtonClick() {
   // const filterCategory = this.querySelector('label').getAttribute('for');
   const filterCategory = this.getAttribute('data-category');
   toggleFilter(filterCategory);
+
+  toggleInfoText();
 }
 
 function toggleFilter(category) {
@@ -81,4 +82,30 @@ function initFilterButtons() {
   filterButtons.forEach((button) => {
     button.addEventListener('click', filterButtonClick);
   });
+}
+
+function totalCount() {
+  return document.querySelectorAll('gallery-image-item').length;
+}
+
+function activeCount() {
+  const items = document.querySelectorAll('gallery-image-item');
+  const itemArray = Array.from(items);
+  return itemArray.reduce((acc, current) => {
+    if (!current.classList.contains('hidden')) {
+      acc++;
+    }
+    return acc;
+  }, 0);
+}
+
+function toggleInfoText() {
+  const infoText = document.querySelector('#gallery-info-text');
+  const count = activeCount();
+  if (count > 0) {
+    infoText.innerText = `Showing ${count} of ${totalCount()} images`;
+  } else {
+    infoText.innerText = 'No results match the selected filters';
+  }
+  infoText.classList.toggle('hidden', filterState.filterCount === 0);
 }

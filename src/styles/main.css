@@ -426,6 +426,11 @@ footer {
 #footer-container ul {
   margin-bottom: 0; }
 
+#gallery-info-text {
+  margin-top: 1.5rem !important;
+  font-weight: 600;
+  font-family: var(--default-title-font-family); }
+
 #hero-offheader {
   background: -moz-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/home-hero.avif"));
   background: -webkit-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/home-hero.avif"));

@@ -21,13 +21,13 @@ function submitForm(e) {
     .then((res) => res.json())
     .then((data) => {
       this.reset();
-      outputText.innerHTML = data.message;
+      outputText.innerText = data.message;
       outputText.classList.add('text-success');
     })
     .catch((err) => {
       console.log(err);
       this.reset();
-      outputText.innerHTML = err.message;
+      outputText.innerText = err.message;
       outputText.classList.add('text-danger');
     })
     .finally(() => {
@@ -46,6 +46,6 @@ const sendingBtn = contactForm.querySelector('#sending-button');
 const resetBtn = contactForm.querySelector('#reset-button');
 
 resetBtn.addEventListener('click', (e) => {
-  outputText.innerHTML = '';
+  outputText.innerText = '';
   outputText.classList.add('hidden');
 });

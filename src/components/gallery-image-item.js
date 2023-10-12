@@ -2,15 +2,14 @@ class GalleryImageItem extends HTMLElement {
   #modalId = 'galleryImageModal';
   #sizes =
     '(min-width: 1920px) 364px, (min-width: 1200px) 297px, (min-width: 1000px) calc(33.33vw - 78px), (min-width: 780px) calc(50vw - 104px), (min-width: 580px) calc(50vw - 61px), calc(100vw - 98px)';
-  #numberBeforeFold = 6;
   constructor() {
     super();
     this.html = document.createElement('div');
     this.html.classList.add('col', 'gallery-image-item');
     this.image = document.createElement('img');
     this.image.classList.add('gallery-image');
-    if (this.#numberBeforeFold > 0) {
-      this.#numberBeforeFold--;
+    if (aboveFoldCount > 0) {
+      aboveFoldCount--;
     } else {
       this.image.setAttribute('loading', 'lazy');
     }
@@ -37,5 +36,7 @@ class GalleryImageItem extends HTMLElement {
     this.appendChild(this.html);
   }
 }
+
+let aboveFoldCount = 6;
 
 customElements.define('gallery-image-item', GalleryImageItem);
