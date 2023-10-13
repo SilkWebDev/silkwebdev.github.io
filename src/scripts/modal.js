@@ -24,7 +24,7 @@ function createModalFooter() {
   const modalFooter = document.createElement('div');
   const row = document.createElement('div');
   const headingCol = document.createElement('div');
-  const descriptionCol = document.createElement('div');
+  // const descriptionCol = document.createElement('div');
 
   modalFooter.classList.add('modal-footer');
   row.classList.add('row');
@@ -32,19 +32,21 @@ function createModalFooter() {
     'col',
     'd-flex',
     'col-12',
-    'col-md-4',
-    'col-lg-3',
+    // 'col-md-4',
+    // 'col-lg-3',
     'flex-column'
   );
-  descriptionCol.classList.add('col', 'col-12', 'col-md-4', 'col-lg-3');
+  // descriptionCol.classList.add('col', 'col-12', 'col-md-4', 'col-lg-3');
 
   row.appendChild(headingCol);
-  row.appendChild(descriptionCol);
+  // row.appendChild(descriptionCol);
   modalFooter.appendChild(row);
 
   const title = document.createElement('h2');
+  title.id = 'modal-footer-title';
   title.innerText = 'Title';
   const subtitle = document.createElement('h3');
+  subtitle.id = 'modal-footer-subtitle';
   subtitle.innerText = 'Subtitle';
 
   headingCol.appendChild(title);

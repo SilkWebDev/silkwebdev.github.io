@@ -21,19 +21,61 @@ class GalleryImageItem extends HTMLElement {
       img.src = this.image.src;
       img.srcset = this.image.srcset;
       modal.style.display = 'flex';
+      this.setModalTitleAndSubtitle(
+        this.getAttribute('img-title'),
+        this.getAttribute('img-subtitle')
+      );
     });
     this.html.appendChild(this.image);
   }
 
   connectedCallback() {
-    this.hasAttribute('img-src')
-      ? (this.image.src = this.getAttribute('img-src'))
-      : (this.image.src = '');
-    if (this.hasAttribute('img-srcset')) {
-      this.image.srcset = this.getAttribute('img-srcset');
-      this.image.sizes = this.#sizes;
-    }
+    this.image.src = this.getSrc();
+    this.image.srcset = this.getSrcSet();
+    this.image.sizes = this.#sizes;
     this.appendChild(this.html);
+  }
+
+  setModalTitleAndSubtitle(title, subtitle) {
+    const tt = document
+      .getElementById(this.#modalId)
+      .querySelector('h2#modal-footer-title');
+    const st = document
+      .getElementById(this.#modalId)
+      .querySelector('h3#modal-footer-subtitle');
+    tt.innerText = title;
+    st.innerText = subtitle;
+  }
+
+  getSrc() {
+    const root = this.getAttribute('img-root');
+    const catg = this.getAttribute('category');
+    const file = this.getAttribute('img-file');
+    const dim = this.getAttribute('img-srcset');
+    const extn = this.getAttribute('img-ext');
+    const d = dim.split(',');
+    return `${root}${catg}/${file}-${d[0]}${extn}`;
+  }
+
+  getSrcSet() {
+    const root = this.getAttribute('img-root');
+    const catg = this.getAttribute('category');
+    const file = this.getAttribute('img-file');
+    const extn = this.getAttribute('img-ext');
+    const dims = this.getAttribute('img-srcset').split(',');
+    let srcset = '';
+
+    for (let i = 0; i < dims.length; i++) {
+      srcset += `${root}${catg}/${file}-${dims[i]}${extn} ${dims[i]}`;
+      if (i !== dims.length - 1) {
+        srcset += ',';
+      }
+    }
+
+    // for (let dim of dims) {
+    //   srcset += `${root}${catg}/${file}-${dim}${extn} ${dim}, `;
+    // }
+    return srcset;
   }
 }
 
