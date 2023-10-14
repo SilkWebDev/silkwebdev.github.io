@@ -76,7 +76,7 @@ function resetFilters() {
 
 function initFilterButtons() {
   const filterButtons = [].slice.call(
-    document.querySelectorAll('.filter-button')
+    document.querySelectorAll('.filter-category')
   );
 
   filterButtons.forEach((button) => {

@@ -41,27 +41,27 @@
               </div>
 
               <div class="d-flex flex-wrap justify-content-start justify-content-md-end gap-1"id="filter-buttons">
-                <button class="btn btn-success filter-button"data-bs-toggle="button"data-category="extension">
+                <button class="btn btn-success filter-button filter-category"data-bs-toggle="button"data-category="extension">
                   <i class="bi bi-house-add"></i>
                   Extensions
                 </button>
-                <button class="btn btn-success filter-button"data-bs-toggle="button"data-category="new-build">
+                <button class="btn btn-success filter-button filter-category"data-bs-toggle="button"data-category="new-build">
                   <i class="bi bi-house"></i>
                   New Builds
                 </button>
-                <button class="btn btn-success filter-button"data-bs-toggle="button"data-category="conversion">
+                <button class="btn btn-success filter-button filter-category"data-bs-toggle="button"data-category="conversion">
                   <i class="bi bi-house-gear"></i>
                   Conversions
                 </button>
-                <button class="btn btn-success filter-button"data-bs-toggle="button"data-category="renovation">
+                <button class="btn btn-success filter-button filter-category"data-bs-toggle="button"data-category="renovation">
                   <i class="bi bi-house-up"></i>
                   Renovations
                 </button>
-                <button class="btn btn-success filter-button"data-bs-toggle="button"data-category="landscaping">
+                <button class="btn btn-success filter-button filter-category"data-bs-toggle="button"data-category="landscaping">
                   <i class="bi bi-tree"></i>
                   Landscaping
                 </button>
-                <button class="btn btn-danger"onclick="clearFilters()">
+                <button class="btn btn-danger filter-button"onclick="clearFilters()">
                   <i class="bi bi-x"></i>
                 </button>
               </div>
@@ -72,69 +72,92 @@
 
             
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gallery-images g-4">
-              <gallery-image-item img-src="./../images/project-images/extension/ex-victoria-af-1-800w.jpg"img-srcset="./../images/project-images/extension/ex-victoria-af-1-800w.jpg 800w, ./../images/project-images/extension/ex-victoria-af-1-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-victoria-af-1"img-ext=".jpg"img-srcset="800w,400w"img-title="Extension, Malvern"img-subtitle="Rear two-storey extension and patio (1)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-victoria-af-2-1200w.jpg"img-srcset="./../images/project-images/extension/ex-victoria-af-2-1200w.jpg 1200w,./../images/project-images/extension/ex-victoria-af-2-800w.jpg 800w,./../images/project-images/extension/ex-victoria-af-2-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-victoria-af-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern"img-subtitle="Rear two-storey extension and patio (2)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/landscaping/ls-patio-victoria-1-1200w.jpg"img-srcset="./../images/project-images/landscaping/ls-patio-victoria-1-1200w.jpg 1200w,./../images/project-images/landscaping/ls-patio-victoria-1-800w.jpg 800w,./../images/project-images/landscaping/ls-patio-victoria-1-400w.jpg 400w"category="landscaping">
+              <gallery-image-item img-root="./../images/project-images/"category="landscaping"img-file="ls-patio-victoria-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Landscaping, Malvern"img-subtitle="Finished patio from two-storey extension (1)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/landscaping/ls-patio-victoria-2-1200w.jpg"img-srcset="./../images/project-images/landscaping/ls-patio-victoria-2-1200w.jpg 1200w,./../images/project-images/landscaping/ls-patio-victoria-2-800w.jpg 800w,./../images/project-images/landscaping/ls-patio-victoria-2-400w.jpg 400w"category="landscaping"></gallery-image-item>
-
-              <gallery-image-item img-src="./../images/project-images/extension/ex-victoria-og-before-1-1200w.jpg"img-srcset="./../images/project-images/extension/ex-victoria-og-before-1-1200w.jpg 1200w,./../images/project-images/extension/ex-victoria-og-before-1-800w.jpg 800w,./../images/project-images/extension/ex-victoria-og-before-1-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="landscaping"img-file="ls-patio-victoria-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Landscaping, Malvern"img-subtitle="Finished patio from two-storey extension (2)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/berrow-ex-af-1-1200w.jpg"img-srcset="./../images/project-images/extension/berrow-ex-af-1-1200w.jpg 1200w,./../images/project-images/extension/berrow-ex-af-1-800w.jpg 800w,./../images/project-images/extension/berrow-ex-af-1-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-victoria-og-before-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern | Before"img-subtitle="Two-storey extension and patio landscaping">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/berrow-ex-af-2-1200w.jpg"img-srcset="./../images/project-images/extension/berrow-ex-af-2-1200w.jpg 1200w,./../images/project-images/extension/berrow-ex-af-2-800w.jpg 800w,./../images/project-images/extension/berrow-ex-af-2-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="berrow-ex-af-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension & Renovation, Berrow"img-subtitle="Bungalow extension and renovation (1)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/berrow-ex-bf-1-1200w.jpg"img-srcset="./../images/project-images/extension/berrow-ex-bf-1-1200w.jpg 1200w,./../images/project-images/extension/berrow-ex-bf-1-800w.jpg 800w,./../images/project-images/extension/berrow-ex-bf-1-400w.jpg 400w"category="extension">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="berrow-ex-af-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension & Renovation, Berrow"img-subtitle="Bungalow extension and renovation (2)">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/new-build/callowend-nb-1280w.jpg"img-srcset="./../images/project-images/new-build/callowend-nb-1280w.jpg 1280w,./../images/project-images/new-build/callowend-nb-800w.jpg 800w,./../images/project-images/new-build/callowend-nb-400w.jpg 400w"category="new-build"></gallery-image-item>
-
-              <gallery-image-item img-src="./../images/project-images/new-build/callowend-nb-2-og-1200w.jpg"img-srcset="./../images/project-images/new-build/callowend-nb-2-og-1200w.jpg 1200w,./../images/project-images/new-build/callowend-nb-2-og-800w.jpg 800w,./../images/project-images/new-build/callowend-nb-2-og-400w.jpg 400w"category="new-build"></gallery-image-item>
-
-              <gallery-image-item img-src="./../images/project-images/new-build/callowend-nb-3-og-1200w.jpg"img-srcset="./../images/project-images/new-build/callowend-nb-3-og-1200w.jpg 1200w,./../images/project-images/new-build/callowend-nb-3-og-800w.jpg 800w,./../images/project-images/new-build/callowend-nb-3-og-400w.jpg 400w"category="new-build">
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="berrow-ex-bf-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Before | Extension & Renovation, Berrow"img-subtitle="Bungalow extension and renovation">
               </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/landscaping/cradley-ls-og-2-1135w.jpg"img-srcset="./../images/project-images/landscaping/cradley-ls-og-2-1135w.jpg 1135w,./../images/project-images/landscaping/cradley-ls-og-2-800w.jpg 800w,./../images/project-images/landscaping/cradley-ls-og-2-400w.jpg 400w"category="landscaping"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="new-build"img-file="callowend-nb"img-ext=".jpg"img-srcset="1280w,800w,400w"img-title="New Build, Callow End"img-subtitle="Four-bedroom new build, single garage and larch cladding">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/landscaping/cradley-ls-750w.jpg"img-srcset="./../images/project-images/landscaping/cradley-ls-225w.jpg 225w,./../images/project-images/landscaping/cradley-ls-450w.jpg 450w,./../images/project-images/landscaping/cradley-ls-750w.jpg 750w"category="landscaping"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="new-build"img-file="callowend-nb-2-og"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="New Build, Callow End"img-subtitle="Four-bedroom new build with single garage">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-kempsey-2-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-kempsey-2-1200w.jpg 1200w,./../images/project-images/conversion/cv-kempsey-2-800w.jpg 800w,./../images/project-images/conversion/cv-kempsey-2-400w.jpg 400w"category="conversion"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="new-build"img-file="callowend-nb-3-og"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="New Build, Callow End"img-subtitle="Rear elevation of four-bedroom new build">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-kempsey-3-750w.jpg"img-srcset="./../images/project-images/conversion/cv-kempsey-3-750w.jpg 750w,./../images/project-images/conversion/cv-kempsey-3-600w.jpg 600w,./../images/project-images/conversion/cv-kempsey-3-300w.jpg 300w"category="conversion"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="landscaping"img-file="cradley-ls-og-2"img-ext=".jpg"img-srcset="1135w,800w,400w"img-title="Greenhouse, Cradley"img-subtitle="Greenhouse with English garden wall base & landscaping">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-kempsey-4-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-kempsey-4-1200w.jpg 1200w,./../images/project-images/conversion/cv-kempsey-4-800w.jpg 800w,./../images/project-images/conversion/cv-kempsey-4-400w.jpg 400w"category="conversion"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="landscaping"img-file="cradley-ls"img-ext=".jpg"img-srcset="750w,450w,225w"img-title="Carport, Cradley"img-subtitle="Carport extension to existing double garage">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-campion-1-750w.jpg"img-srcset="./../images/project-images/extension/ex-campion-1-750w.jpg 750w,./../images/project-images/extension/ex-campion-1-600w.jpg 600w,./../images/project-images/extension/ex-campion-1-300w.jpg 300w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-kempsey-4"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Before | Barn / Stables Conversion, Kempsey"img-subtitle="Front elevation of barn and stables">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-campion-2-750w.jpg"img-srcset="./../images/project-images/extension/ex-campion-2-750w.jpg 750w,./../images/project-images/extension/ex-campion-2-600w.jpg 600w,./../images/project-images/extension/ex-campion-2-300w.jpg 300w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-kempsey-3"img-ext=".jpg"img-srcset="750w,600w,300w"img-title="Before | Barn / Stables Conversion, Kempsey"img-subtitle="Internal view of barn - will house the kitchen / living area">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-churchill-1-1200w.jpg"img-srcset="./../images/project-images/extension/ex-churchill-1-1200w.jpg 1200w,./../images/project-images/extension/ex-churchill-1-800w.jpg 800w,./../images/project-images/extension/ex-churchill-1-400w.jpg 400w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-campion-1"img-ext=".jpg"img-srcset="750w,600w,300w"img-title="Extension, Malvern"img-subtitle="Two-storey extension to kitchen and bedroom">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-churchill-2-1200w.jpg"img-srcset="./../images/project-images/extension/ex-churchill-2-1200w.jpg 1200w,./../images/project-images/extension/ex-churchill-2-800w.jpg 800w,./../images/project-images/extension/ex-churchill-2-400w.jpg 400w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-campion-2"img-ext=".jpg"img-srcset="750w,600w,300w"img-title="Extension, Malvern"img-subtitle="Side elevation of two-storey extension to kitchen and bedroom">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-churchill-bf-1-1200w.jpg"img-srcset="./../images/project-images/extension/ex-churchill-bf-1-1200w.jpg 1200w,./../images/project-images/extension/ex-churchill-bf-1-800w.jpg 800w,./../images/project-images/extension/ex-churchill-bf-1-400w.jpg 400w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-churchill-bf-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Before | Extension, Malvern"img-subtitle="Property prior to front elevation extension, garage renovation and first-storey extension">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-hampden-1-1200w.jpg"img-srcset="./../images/project-images/extension/ex-hampden-1-1200w.jpg 1200w,./../images/project-images/extension/ex-hampden-1-800w.jpg 800w,./../images/project-images/extension/ex-hampden-1-400w.jpg 400w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-churchill-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern"img-subtitle="Extension to front elevation (living room and hallway) plus additional first-floor extension above existing garage">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/extension/ex-hampden-2-1200w.jpg"img-srcset="./../images/project-images/extension/ex-hampden-2-1200w.jpg 1200w,./../images/project-images/extension/ex-hampden-2-800w.jpg 800w,./../images/project-images/extension/ex-hampden-2-400w.jpg 400w"category="extension"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-churchill-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern"img-subtitle="Side profile of extension to front elevation (living room and hallway) plus additional first-floor extension above existing garage">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/new-build/nb-pershore-1-1200w.jpg"img-srcset="./../images/project-images/new-build/nb-pershore-1-1200w.jpg 1200w,./../images/project-images/new-build/nb-pershore-1-800w.jpg 800w,./../images/project-images/new-build/nb-pershore-1-400w.jpg 400w"category="new-build"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-hampden-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern"img-subtitle="Front elevation, first-storey extension to property (righthand side of frame)">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/new-build/nb-pershore-2-1200w.jpg"img-srcset="./../images/project-images/new-build/nb-pershore-2-1200w.jpg 1200w,./../images/project-images/new-build/nb-pershore-2-800w.jpg 800w,./../images/project-images/new-build/nb-pershore-2-400w.jpg 400w"category="new-build"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="extension"img-file="ex-hampden-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Extension, Malvern"img-subtitle="Rear elevation, ground-floor extension (righthand side) and first-floor extension above existing (lefthand side)">
+              </gallery-image-item>
 
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-upton-1-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-upton-1-1200w.jpg 1200w,./../images/project-images/conversion/cv-upton-1-800w.jpg 800w,./../images/project-images/conversion/cv-upton-1-400w.jpg 400w"category="conversion"></gallery-image-item>
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-upton-2-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-upton-2-1200w.jpg 1200w,./../images/project-images/conversion/cv-upton-2-800w.jpg 800w,./../images/project-images/conversion/cv-upton-2-400w.jpg 400w"category="conversion"></gallery-image-item>
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-upton-3-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-upton-3-1200w.jpg 1200w,./../images/project-images/conversion/cv-upton-3-800w.jpg 800w,./../images/project-images/conversion/cv-upton-3-400w.jpg 400w"category="conversion"></gallery-image-item>
-              <gallery-image-item img-src="./../images/project-images/conversion/cv-upton-4-1200w.jpg"img-srcset="./../images/project-images/conversion/cv-upton-4-1200w.jpg 1200w,./../images/project-images/conversion/cv-upton-4-800w.jpg 800w,./../images/project-images/conversion/cv-upton-4-400w.jpg 400w"category="conversion"></gallery-image-item>
-              <gallery-image-item img-src="./../images/project-images/landscaping/ls-upton-1-1200w.jpg"img-srcset="./../images/project-images/landscaping/ls-upton-1-1200w.jpg 1200w,./../images/project-images/landscaping/ls-upton-1-800w.jpg 800w,./../images/project-images/landscaping/ls-upton-1-400w.jpg 400w"category="landscaping"></gallery-image-item>
+              <gallery-image-item img-root="./../images/project-images/"category="new-build"img-file="nb-pershore-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="New Build, Pershore"img-subtitle="New build bungalow and garage (1)">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="new-build"img-file="nb-pershore-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="New Build, Pershore"img-subtitle="New build bungalow and garage (2)">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-upton-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Before | Barn Conversion, Upton-upon-Severn"img-subtitle="Rear elevation of barn in Longdon, Upton-upon-Severn">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-upton-2"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Barn Conversion, Upton-upon-Severn"img-subtitle="Side elevation of converted barn in Longdon, Upton-upon-Severn (1)">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-upton-3"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Barn Conversion, Upton-upon-Severn"img-subtitle="Side elevation of converted barn in Longdon, Upton-upon-Severn (2)">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="conversion"img-file="cv-upton-4"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Barn Conversion, Upton-upon-Severn"img-subtitle="Larch cladding and idigbo window detail of converted barn in Longdon, Upton-upon-Severn">
+              </gallery-image-item>
+
+              <gallery-image-item img-root="./../images/project-images/"category="landscaping"img-file="ls-upton-1"img-ext=".jpg"img-srcset="1200w,800w,400w"img-title="Garden Wall, Upton-upon-Severn"img-subtitle="Partition garden wall from converted barn in Longdon, Upton-upon-Severn">
+              </gallery-image-item>
             </div>
             
           </div>

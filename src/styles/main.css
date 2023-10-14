@@ -141,6 +141,9 @@ footer {
   margin-bottom: 30px; }
 
 .filter-button {
+  flex-basis: 100%; }
+
+.filter-category {
   --bs-btn-bg: var(--secondary-color);
   --bs-btn-border-color: var(--secondary-color);
   --bs-btn-hover-bg: #2596be;
@@ -149,9 +152,9 @@ footer {
   --bs-btn-active-border-color: #25a5be;
   font-family: 'Quicksand', sans-serif;
   transition: transform 0.15s; }
-  .filter-button.active {
+  .filter-category.active {
     transform: scale(0.95); }
-  .filter-button > i {
+  .filter-category > i {
     margin-right: 3px; }
 
 .gallery-images {
@@ -326,6 +329,7 @@ footer {
   width: 100%; }
   .modal-footer > .row {
     justify-content: space-between;
+    margin-top: 0.75rem;
     width: 100%; }
 
 .navbar-brand {
@@ -440,6 +444,15 @@ footer {
   background-position: center;
   height: 100vh; }
 
+#modal-footer-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+#modal-footer-subtitle {
+  font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif; }
+
 #site-logo {
   border-radius: 50%;
   margin-top: auto;
@@ -541,6 +554,9 @@ footer {
 @media only screen and (min-width: 320px) {
   .hero-text {
     padding: 0 48px !important; } }
+@media only screen and (min-width: 371px) {
+  .filter-button {
+    flex-basis: calc(50% - 0.25rem); } }
 @media only screen and (min-width: 425px) {
   .card .card-title-bar .card-title-bar-icons {
     flex-direction: row !important; }
@@ -572,6 +588,9 @@ footer {
   .container-fluid {
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5); }
+
+  .filter-button {
+    flex-basis: auto; }
 
   .floating-button {
     -webkit-transform: translate(-150%, -150%);
