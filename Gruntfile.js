@@ -55,7 +55,7 @@ module.exports = function (grunt) {
         },
         files: [
           {
-            cwd: './images/',
+            cwd: './images/project-images/toMinify',
             expand: true,
             src: ['**/*.{jpg,png}'],
             dest: './images',
