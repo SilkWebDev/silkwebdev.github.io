@@ -436,9 +436,9 @@ footer {
   font-family: var(--default-title-font-family); }
 
 #hero-offheader {
-  background: -moz-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/home-hero.avif"));
-  background: -webkit-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/home-hero.avif"));
-  background: linear-gradient(#3c7a89, rgba(60, 122, 137, 0.33)), url("../../images/home-hero.avif");
+  background: -moz-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/archi-blueprint-1920w.jpg"));
+  background: -webkit-linear-gradient(top, #3c7a89, rgba(60, 122, 137, 0.33), url("../../images/archi-blueprint-1920w.jpg"));
+  background: linear-gradient(#3c7a89, rgba(60, 122, 137, 0.33)), url("../../images/archi-blueprint-1920w.jpg");
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
   background-size: cover;
   background-position: center;
