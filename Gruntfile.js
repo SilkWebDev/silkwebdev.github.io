@@ -70,13 +70,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', ['sass', 'uglify', 'htmlmin', 'cssmin']);
+  grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin']);
   grunt.registerTask('styles', ['sass', 'cssmin']);
-  grunt.registerTask('all', [
-    'sass',
-    'uglify',
-    'htmlmin',
-    'cssmin',
-    'imagemin',
-  ]);
+  grunt.registerTask('all', ['uglify', 'htmlmin', 'cssmin', 'imagemin']);
 };

@@ -258,8 +258,6 @@ function addTestimonials(columns) {
   });
 }
 
-
-
 function generateCollapseClass(testimonialId, target = false) {
   let c = 'multi-collapse-' + testimonialId;
   if (target) {
@@ -388,5 +386,16 @@ const testimonials = [
       'Everything will be finished to a high spec. His permanent team follow suit and are respectful, cheerful and a pleasure to have around./x' +
       'We have had the first part of our extension done and we are more than delighted with it. We are now looking forward to the second phase of our extension and know we are in excellent hands.',
     imageURL: './../images/project-images/extension/ex-hampden-1-1200w.jpg',
+  },
+  {
+    title: 'Sarah Edwards',
+    subtitle: 'Extension and Renovation, Hanley Swan',
+    jobClassifications: ['extension', 'renovation'],
+    excerpt:
+      'Professional, hard-working, compassionate and exceptionally reliable. THANK YOU!',
+    testimony:
+      'To enable a dream to become a reality, I needed a project manager, a mediator to the local county council at every appropriate stage of the build <i>and</i> a manager of an exceptional team of professionals./x' +
+      'This is exactly what was delivered. I highly recommend the services of J. S. Kerr Building Limited and his team. While Jim and his team transformed our house over an eight month period, they have given me my DREAM HOME!/x' +
+      'Professional, hard-working, compassionate and exceptionally reliable. THANK YOU!',
   },
 ];

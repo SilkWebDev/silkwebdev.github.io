@@ -16,5 +16,8 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.2.2",
     "imagemin-mozjpeg": "^9.0.0"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
