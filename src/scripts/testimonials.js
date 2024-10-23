@@ -292,6 +292,18 @@ const testimonials = [
     imageURL: '',
   },
   {
+    title: 'Robin Marling, retired Chartered Surveyor',
+    subtitle: 'Extension & Renovation, Malvern',
+    jobClassifications: ['extension', 'renovation'],
+    excerpt:
+      'His workmanship was always good, and from years of experience he also offered suggestions which have improved the project. I am very pleased with the work and have no hesitation in recommending his firm.',
+    testimony:
+      'J. S. Kerr [Building Limited] carried out building works for me over a 4 month period, involving some demolitions / structural alterations, an extension, refurbishment of kitchen and bathroom, plumbing, heating and electrical modifications./x' +
+      'Throughout, he was very diligent and reliable - he keeps his promises. He was always fair in his approach and had good control over his subcontractors, who all have to meet his own high standards./x' +
+      'His workmanship was always good, and from years of experience he also offered suggestions which have improved the project. I am very pleased with the work and have no hesitation in recommending his firm.',
+    imageURL: '',
+  },
+  {
     title: 'John & Sally',
     subtitle: 'Extension, Malvern',
     jobClassifications: ['extension'],
