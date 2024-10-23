@@ -67,11 +67,12 @@ function createImgModal(id, footer = false) {
   });
   closeButton.innerHTML = '<i class="bi bi-x"></i>';
 
+  modal.appendChild(closeButton);
+
   const modalContent = document.createElement('div');
   modalContent.classList.add('img-modal-content');
 
   const modalImage = document.createElement('img');
-  modalContent.appendChild(closeButton);
   modalContent.appendChild(modalImage);
 
   if (footer) {
